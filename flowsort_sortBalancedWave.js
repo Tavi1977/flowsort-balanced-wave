@@ -1,10 +1,10 @@
-var FlowSort = FlowSort || {};
-
 // FlowSort.sortBalancedWave — сортировка треков по темпу и тональностям (Camelot)
+
+var FlowSort = FlowSort || {};
 
 FlowSort.sortBalancedWave = function(tracks, options) {
 
-// Внутренний переключатель сценариев тональностей.
+// Внутренний переключатель сценариев сортировки тональностей.
 
 const USE_KEY_SCENARIOS = true;
 

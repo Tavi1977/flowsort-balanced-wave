@@ -1,7 +1,6 @@
 var FlowSort = FlowSort || {};
 
-// FlowSort.sortBalancedWave — темпо+тональность сортировка треков для  Goofy / Spotify 
-// Автор: Miхась
+// FlowSort.sortBalancedWave — сортировка треков по темпу и тональностям (Camelot)
 
 FlowSort.sortBalancedWave = function(tracks, options) {
 

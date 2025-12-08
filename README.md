@@ -14,6 +14,9 @@ DJ-friendly tempo & key sorting tracks for Goofy / Spotify.
 
 Содержимое flowsort_sortBalancedWave.js нужно скопировать, сохранить в отдельный файл и передвинуть его повыше, следующим сразу после library.gs 
 
+<img width="538" height="457" alt="Снимок экрана от 2025-12-08 14-39-59" src="https://github.com/user-attachments/assets/7d0da60b-296f-4d26-bd25-d74c200e5f45" />
+
+
 Вызывать функцию в скриптах нужно непосредственно перед формированием финального плейлиста (по принципу переменная  "tracks = FlowSort.sortBalancedWave(tracks);" 
 
 На скриншоте ниже пример создания плейлиста с отсортированными любимыми треками.

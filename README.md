@@ -16,6 +16,8 @@ DJ-friendly tempo & key sorting tracks for Goofy / Spotify.
 
 Вызывать функцию в скриптах нужно непосредственно перед формированием финального плейлиста (по принципу переменная  "tracks = FlowSort.sortBalancedWave(tracks);" 
 
+На скриншоте ниже пример создания плейлиста с отсортированными любимыми треками.
+
 <img width="788" height="505" alt="Без названия" src="https://github.com/user-attachments/assets/05a8956e-8b75-4917-b2eb-8b649b50ee73" />
 
 По умолчанию сортировка работает в режиме (USE_KEY_SCENARIOS = true)

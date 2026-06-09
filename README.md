@@ -31,7 +31,24 @@ DJ-friendly tempo & key sorting tracks for Goofy / Spotify.
  
  <img width="596" height="169" alt="Снимок экрана от 2026-01-25 15-41-40" src="https://github.com/user-attachments/assets/b00fb466-6b9e-42a5-b2b9-c5c36fe6e96d" />
 
+Для использования сортировки в приложении Audiolist нужно создать отдельный файл с кодом, переместить его под файл config.gs и обновить развертывание. В Audiolist применять как goofy функцию.
+```javascript
+function AulWave(data) {
+  // Берём чистые треки
+  let tracks = data.items;
 
+
+  tracks = FlowSort.sortBalancedWave(tracks);
+
+  // Собираем обратно
+  return Audiolist.response({
+    message: 'Сортировка по Wave применена',
+    messageType: Audiolist.MESSAGE_TYPES.DEFAULT,
+    variableType: Audiolist.VARIABLE_TYPES.SPOTIFY_TRACK,
+    items: tracks
+  });
+} 
+```
 25.01.2026 .Обновил. Переработал подход к сортировке треков, не имеющих в фичах тональность. А также добавил парочку дополнительных приемов в сортировке треков по тональностям и темпу.
 
 09.06.2026. Обновил. Улучшил сведение треков еще несколькими тональными техниками.
